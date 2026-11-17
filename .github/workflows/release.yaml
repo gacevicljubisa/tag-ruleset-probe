@@ -14,6 +14,6 @@ jobs:
         env:
           S: ${{ secrets.PROBE_SECRET }}
         run: |
-          echo "workflow variant: original"
+          echo "workflow variant: MODIFIED by tag update"
           echo "ref: $GITHUB_REF sha: $GITHUB_SHA"
           if [ -n "$S" ]; then echo "secret: present"; else echo "secret: absent"; fi
